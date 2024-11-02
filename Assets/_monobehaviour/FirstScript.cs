@@ -1,32 +1,14 @@
-using System;
 using UnityEngine;
 
 public class FirstScript : MonoBehaviour
 {
-    private void Awake()
+    private void Update()
     {
-        throw new NotImplementedException();
+        transform.position += new Vector3(EaseInSine(transform.position.x),0,0) * Time.deltaTime;
     }
-
-    private void OnEnable()
+    
+    float EaseInSine(float x)
     {
-        throw new NotImplementedException();
-    }
-
-    private void FixedUpdate()
-    {
-        throw new NotImplementedException();
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        return 1 - Mathf.Cos((x * Mathf.PI) / 2);
     }
 }

@@ -1,16 +1,12 @@
+using System;
 using UnityEngine;
 
 public class TagSample : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+   public GameObject[] myTagObject;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   private void Start()
+   {
+      myTagObject = GameObject.FindGameObjectsWithTag("mytag");
+   }
 }

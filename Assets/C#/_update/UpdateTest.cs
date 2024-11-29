@@ -24,6 +24,7 @@ public class UpdateTest : MonoBehaviour
         }
     }
 
+
     private void FixedUpdate()
     {
         totalFixedUpdateCallPerSecond++;
@@ -47,4 +48,7 @@ public class UpdateTest : MonoBehaviour
             lateUpdateTimer = 1;
         }
     }
+	
+	private void TestFunction(){
+	}
 }

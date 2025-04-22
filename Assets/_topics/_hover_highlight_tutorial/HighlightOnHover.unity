@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 12123539}
   - component: {fileID: 12123538}
   - component: {fileID: 12123537}
+  - component: {fileID: 12123541}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -227,6 +228,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &12123541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12123536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6931d61c9378f8940939436fc4e0ecc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverMaterial: {fileID: 2100000, guid: 7a3e81846df8fe841b3652d6a2558e1f, type: 2}
 --- !u!1 &854872235
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +350,7 @@ GameObject:
   - component: {fileID: 1161779211}
   - component: {fileID: 1161779210}
   - component: {fileID: 1161779209}
+  - component: {fileID: 1161779213}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -432,6 +447,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1161779213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161779208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6931d61c9378f8940939436fc4e0ecc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverMaterial: {fileID: 2100000, guid: 7a3e81846df8fe841b3652d6a2558e1f, type: 2}
 --- !u!1 &1316581722
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +472,7 @@ GameObject:
   - component: {fileID: 1316581725}
   - component: {fileID: 1316581724}
   - component: {fileID: 1316581723}
+  - component: {fileID: 1316581727}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -540,6 +569,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1316581727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316581722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6931d61c9378f8940939436fc4e0ecc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverMaterial: {fileID: 2100000, guid: 7a3e81846df8fe841b3652d6a2558e1f, type: 2}
 --- !u!1 &1724566451
 GameObject:
   m_ObjectHideFlags: 0

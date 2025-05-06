@@ -11,6 +11,8 @@ public class Coin : MonoBehaviour
    public float rotateSpeed = 90f;
    public float pulseScale = 1.1f;
    public float pulseDuration = 0.5f;
+
+   public float coinDisappearDuration = 0.2f;
    
 
    private void Start()
@@ -37,8 +39,15 @@ public class Coin : MonoBehaviour
            //play a sound
            //particle play here
            //coin animation to inventory
+
+           GetComponent<Collider>().enabled = false;
            
-           Destroy(this.gameObject);
+           transform.DOScale(Vector3.zero, coinDisappearDuration)
+               .SetEase(Ease.InBack)
+               .onComplete += () => Destroy(gameObject);
+           
+           
+           //Destroy(this.gameObject);
        }
    }
 }

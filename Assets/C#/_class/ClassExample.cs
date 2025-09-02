@@ -6,6 +6,8 @@ public class ClassExample : MonoBehaviour
     private void Start()
     {
         Player myPlayer = new Player("John", 120, 100);
+        myPlayer.playerName = "John";
+        
         
         myPlayer.PrintPlayerName();
         myPlayer.PrintPlayerScore();

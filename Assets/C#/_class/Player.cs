@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class Player 
 {
-    string playerName; // private as default
+   public string playerName; //default as private
+    
     int playerScore;
     int playerHealth;
-    bool isPlayerDead;
-    protected int thisIsProtectedVariable;
+    protected bool isPlayerDead;
     
 
    public Player(string playerName, int playerScore, int playerHealth)

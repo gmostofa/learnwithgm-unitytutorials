@@ -6,14 +6,15 @@ using UnityEngine.UI;
 public class PlayerPrefsExample : MonoBehaviour
 {
    public Button saveButton;
+   public Button loadButton;
    public TMP_InputField valueInput;
    public TextMeshProUGUI valueText;
 
 
    private void Start()
    {
-      LoadData();
-      saveButton.onClick.AddListener(SaveData);
+      //LoadData();
+      //saveButton.onClick.AddListener(SaveData);
    }
 
 

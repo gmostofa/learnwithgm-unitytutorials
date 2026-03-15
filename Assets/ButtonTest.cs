@@ -10,10 +10,14 @@ public class ButtonTest : MonoBehaviour
 
    private void Start()
    {
-      ourButton.onClick.AddListener(() => {
-            Debug.Log("Button is pressed");
-            ourCube.SetActive(false);
-         }
-      );
+      ourButton.onClick.AddListener((() =>
+      {
+         
+      }));
+   }
+
+   public void ButtonFunction()
+   {
+      ourCube.SetActive(false);
    }
 }

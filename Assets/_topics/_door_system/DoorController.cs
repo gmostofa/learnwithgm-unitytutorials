@@ -31,19 +31,8 @@ public class DoorController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void ToggleDoor()
     {
-        if (other.CompareTag("Player"))
-        {
-            isOpen = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        { 
-            isOpen = false;
-        }
+        isOpen = !isOpen;
     }
 }

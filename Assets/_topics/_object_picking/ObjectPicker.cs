@@ -1,4 +1,4 @@
-using System;
+using DG.Tweening;
 using UnityEngine;
 
 public class ObjectPicker : MonoBehaviour
@@ -29,7 +29,10 @@ public class ObjectPicker : MonoBehaviour
        Rigidbody rb = heldObject.GetComponent<Rigidbody>();
        heldObject.transform.SetParent(null);
        rb.isKinematic = false;
-       heldObject.transform.position = previousPosition;
+       
+       //heldObject.transform.position = previousPosition;
+
+       heldObject.transform.DOMove(previousPosition, 0.25f);
 
        heldObject = null;
     }
@@ -51,7 +54,9 @@ public class ObjectPicker : MonoBehaviour
                 
                 previousPosition = heldObject.transform.position;
                 
-                heldObject.transform.position = holdPoint.position;
+                //heldObject.transform.position = holdPoint.position;
+                
+                heldObject.transform.DOMove(holdPoint.position, 0.25f);
                 heldObject.transform.SetParent(holdPoint);
             }
         }
